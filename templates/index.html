@@ -1,0 +1,38 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directorio de Contactos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Directorio de Contactos</h1>
+
+    <!-- Formulario para agregar contacto -->
+    <form id="contactForm">
+        <input type="text" id="id" placeholder="ID" required>
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="text" id="telefono" placeholder="Teléfono" required>
+        <button type="submit">Agregar Contacto</button>
+    </form>
+
+    <h2>Lista de Contactos</h2>
+    <table id="contactTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+<h3>Realizado por : Yhoan Dario Escobar Patiño </h3>
+<h3>Codigo: 81557 </h3>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
